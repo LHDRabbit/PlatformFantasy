@@ -41,14 +41,14 @@ public class Shohei_Enemy : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Obstacle"))
         {
             autoMove = !autoMove;
         }
 
-        if (collision.gameObject.CompareTag("GroundPosition"))
+        if (other.gameObject.CompareTag("GroundPosition"))
         {
             Destroy(gameObject);
         }

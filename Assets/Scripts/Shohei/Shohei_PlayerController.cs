@@ -21,6 +21,9 @@ public class Shohei_PlayerController: MonoBehaviour
     public float jumpTimecounter;
     private bool isJumpting;
 
+    //public GemManager gemManager;
+    public static int gemCount = 0;
+    public static int cherryCount = 0;
 
     void Start()
     {
@@ -74,16 +77,32 @@ public class Shohei_PlayerController: MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        //if (collision.gameObject.CompareTag("Enemy"))
+        //{
+            //Destroy(player);
+        //}
+
+        //if (collision.gameObject.CompareTag("Ground"))
+        //{
+           // bool groundCheck = true;
+        //}
+
+        if (other.gameObject.CompareTag("Gem"))
         {
-            Destroy(player);
+            Destroy(other.gameObject);
+            gemCount = gemCount + 1;
+            Debug.Log("{gemManager.gemCount}");
         }
 
-        if (collision.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag("Cherry"))
         {
-            bool groundCheck = true;
+            Destroy(other.gameObject);
+            cherryCount++;
         }
     }
+    // 1. Create GemManager script and write gemCount variable.
+    // 2. Refer to a gemCount variable in a GemManager script by PlayerController script from
+    // 3. Declair variable by "public GemManager gemManager;" in PlayerController script and use it as "gemManager.gemCount ++;
 }
