@@ -19,7 +19,7 @@ public class GemManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gemText.text = "Gem Count: " + Shohei_PlayerController.gemCount.ToString();
-        cherryText.text = "Cherry Count: " + Shohei_PlayerController.cherryCount.ToString();
+        gemText.text = "Gem Count: " + PlayerMovement.gemCount.ToString();
+        cherryText.text = "Cherry Count: " + PlayerMovement.cherryCount.ToString();
     }
 }
