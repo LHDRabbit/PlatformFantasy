@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class PlayerMovement: MonoBehaviour
+public class PlayerMovement_1: MonoBehaviour
 {
     [SerializeField] private float jumpForce = 6f;
     [SerializeField] private float playerSpeed = 4.5f;
@@ -17,7 +17,7 @@ public class PlayerMovement: MonoBehaviour
     // public float inputPlayer; // coding version 1
 
     public LayerMask groundLayer;
-    private bool isOnGround;
+    private bool isOnGround; // Tranform stores information about player position rotation and size
     public Transform groundPosition;
     public float groundCheckCircle;
 
@@ -58,30 +58,28 @@ public class PlayerMovement: MonoBehaviour
     {
         isOnGround = Physics2D.OverlapCircle(groundPosition.position, groundCheckCircle, groundLayer);
 
-        if (Input.GetButtonDown("Jump") && isOnGround == true)
+        if (isOnGround == true && Input.GetButtonDown("Jump"))
         {
             isJumpting = true;
             jumpTimecounter = jumpTime;
             playerRigidBody.velocity = Vector2.up * jumpForce;
-            //player.AddForce(player.transform.position * jumpForce, ForceMode2D.Impulse);
         }
 
-        if (Input.GetButton("Jump") && isJumpting == true)
+        if (Input.GetButtonDown("Jump") && isJumpting == true)
         {
             if (jumpTimecounter > 0)
             {
                 playerRigidBody.velocity = Vector2.up * jumpForce;
                 jumpTimecounter -= Time.deltaTime;
-            }
-            else
+              }
             {
                 isJumpting = false;
             }
         }
 
-        if (Input.GetButtonUp("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
-            isJumpting = false;
+           isJumpting = false;
         }
     }
 
@@ -99,27 +97,18 @@ public class PlayerMovement: MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        //if (collision.gameObject.CompareTag("Enemy"))
-        //{
-            //Destroy(player);
-        //}
-
-        //if (collision.gameObject.CompareTag("Ground"))
-        //{
-           // bool groundCheck = true;
-        //}
-
         if (other.gameObject.CompareTag("Gem"))
         {
             Destroy(other.gameObject);
-            gemCount = gemCount + 1;
-            Debug.Log("{gemManager.gemCount}");
+            gemCount++;
+            Debug.Log("{CollectobleManager.gemCount}");
         }
 
         if (other.gameObject.CompareTag("Cherry"))
         {
             Destroy(other.gameObject);
             cherryCount++;
+            Debug.Log("{CollectobleManager.cherryCount}");
         }
     }
 

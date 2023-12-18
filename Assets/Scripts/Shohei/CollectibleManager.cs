@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class GemManager : MonoBehaviour
+public class CollectibleManager : MonoBehaviour
 {
 
     [SerializeField] private TMP_Text gemText;
