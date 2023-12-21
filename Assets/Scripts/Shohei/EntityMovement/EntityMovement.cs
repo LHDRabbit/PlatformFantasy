@@ -13,7 +13,7 @@ public class EntityMovement : MonoBehaviour
     private Rigidbody2D enemyRigidbody;
     private Vector2 velocity;
 
-    // Change in a facing sprite direction - 
+    // (W) Change in a facing sprite direction - 
     private float input;
     public SpriteRenderer enemySpriteRenderer;
 
