@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,10 +23,10 @@ public class PlayerMovement : MonoBehaviour
     //Reference of scroll never go back to the past scene 
     private Camera cameraFollow_2;
     
-    //Reference of sprite direction change 
+    // (W) Reference of sprite direction change 
     public SpriteRenderer spriteRenderer;
 
-    //Reference of counting collected Coin and Cherry in CollectibleManager;
+    // (X) Reference of counting collected Coin and Cherry in CollectibleManager;
     public static int gemCount = 0;
     public static int cherryCount = 0;
 
@@ -68,19 +69,25 @@ public class PlayerMovement : MonoBehaviour
         input = Input.GetAxisRaw("Horizontal");
         //velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * speed, speed * Time.deltaTime);
         playerRb.velocity = new Vector2(input * speed, playerRb.velocity.y);
+
+        // Sprite Animation - Start -
         isIdling = false;
         isRunning = true;
         isClimbing = false;
+        // Sprite Animation - End -
         velocityStatic = playerRb.velocity;
 
         if (input == 0)
         {
-            isRunning = false;
+            // Sprite Animation - Start -
             isIdling = true;
+            isRunning = false;
             isClimbing = false;
+            // Sprite Animation - End -
         }
     }
 
+    // (W) A method that changes a facing charactor direction
     private void SpriteDirection()
     {
         if (input < 0)
@@ -104,10 +111,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (isOnGround == true && Input.GetButtonDown("Jump"))
         {
+            // Sprite Animation - Start -
             isJumpting = true;
             isIdling = false;
             isRunning = false;
             isClimbing = false;
+            // Sprite Animation - End -
+
             jumpTimecounter = jumpTime;
             playerRb.velocity = Vector2.up * jumpForce;
         }
@@ -130,16 +140,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    // (X) A method that counts collected Coin and Cherry in CollectibleManager.
+    private void OnCollisionEnter2D(Collision2D other) // (X)-a 
     {
-        if (other.gameObject.CompareTag("Gem"))
+        if (other.gameObject.CompareTag("Gem")) // (X)-1 
         {
             Destroy(other.gameObject);
             gemCount++;
             Debug.Log("{CollectobleManager.gemCount}");
         }
 
-        if (other.gameObject.CompareTag("Cherry"))
+        if (other.gameObject.CompareTag("Cherry")) // (X)-2 
         {
             Destroy(other.gameObject);
             cherryCount++;
