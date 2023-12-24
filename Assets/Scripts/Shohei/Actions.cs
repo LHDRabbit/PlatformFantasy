@@ -1,0 +1,10 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public static class Actions
+{
+    public static Action OnEntitiesCollided; // [tryout1-3] EnntitiesColidedWithEnemy -> change direction
+
+}
