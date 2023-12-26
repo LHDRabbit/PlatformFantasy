@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Reference of scroll never go back to the past scene 
     private Camera cameraFollow_2;
-    
+
     // (W) Reference of sprite direction change 
     public SpriteRenderer spriteRenderer;
 
@@ -38,11 +38,16 @@ public class PlayerMovement : MonoBehaviour
 
     public float jumpTime = 0.5f;
     public float jumpTimecounter;
+
+    [Header("Player Sprite")]
     public bool isJumpting; // (Q2. SpriteRendere)
 
     public bool isIdling;  // (Q1. SpriteRendere)
-    public bool isRunning; // (Q3. SpriteRendere)
+    public bool isRunning; // => Mathf.Abs(velocityStatic.x) > 0.10f || Mathf.Abs(inputAxis) >  0.10f; // (Q3. SpriteRendere)
     public bool isClimbing; // (Q4. SpriteRendere)
+    public bool isSliding => (inputAxis > 0f && velocityStatic.x < 0f) || (inputAxis < 0f && velocityStatic.x > 0f); // (Q5. option  => changing direction)
+
+
 
     // reference from old script - end
 

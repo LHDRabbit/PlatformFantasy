@@ -38,6 +38,7 @@ public class EnemyAIJumping : MonoBehaviour
     {
         checkingGround = Physics2D.OverlapCircle(groundCheckPoint.position, enemyRadius, groundLayer);
         checkingObstacle = Physics2D.OverlapCircle(wallCheckPoint.position, enemyRadius, obstacleLayer);
+
         isGrounded = Physics2D.OverlapBox(groundCheck.position, jumpingRadius, 0, groundLayer);
 
         Patroll();

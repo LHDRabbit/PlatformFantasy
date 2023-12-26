@@ -7,12 +7,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; } // {enable the variable to become accessable from any classes, but set the instance by only GameManager class}
-
     public int world { get; private set; }
     public int stage { get; private set; }
     public int lives { get; private set; }
-
-
 
     private void Awake() // if there is another Singleton, destroy this because Unity game allowes only 1 singletone to use.
     {
@@ -63,7 +60,6 @@ public class GameManager : MonoBehaviour
         {
             LoadLevel(world, stage + 1);
         }
-
         //LoadLevel(world, stage + 1); // if I have only 1 world with 3 stages
     }
 
