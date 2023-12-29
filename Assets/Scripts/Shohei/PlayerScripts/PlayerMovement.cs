@@ -7,6 +7,7 @@ using UnityEngine.U2D;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D playerRb;
+    private Collider2D playercollider2D;
 
     public static Vector2 velocityStatic;
     private float inputAxis;
@@ -56,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody2D>();
         cameraFollow_2 = Camera.main;
+        playercollider2D = GetComponent<Collider2D>();
         isIdling = true;
         isRunning = false;
         isClimbing = false;

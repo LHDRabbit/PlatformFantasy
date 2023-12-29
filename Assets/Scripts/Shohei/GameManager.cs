@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         LoadLevel(1, 1);
     }
 
-    private void LoadLevel(int world, int stage) // (A)-1 Load different world and changed stage
+    public void LoadLevel(int world, int stage) // (A)-1 Load different world and changed stage
     {
         this.world = world;
         this.stage = stage;
@@ -50,18 +50,18 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene($"{world}-{stage}");
     }
 
-    public void NextLevel()  // (B) if I have 3 stages for 1 world & there is more than 1 world.
-    {
-        if (world == 1 && stage == 3)
-        {
-            LoadLevel(world + 1, 1);
-        }
-        else
-        {
-            LoadLevel(world, stage + 1);
-        }
+    //public void NextLevel()  // (B) if I have 3 stages for 1 world & there is more than 1 world.
+    //{
+        //if (world == 1 && stage == 3)
+        //{
+            //LoadLevel(world + 1, 1);
+        //}
+       // else
+        //{
+            //LoadLevel(world, stage + 1);
+       // }
         //LoadLevel(world, stage + 1); // if I have only 1 world with 3 stages
-    }
+    //}
 
     public void ResetLevel(float delay) // (C)-1 Delay ResetLevel happened when lost a live because I do not want to re-set a game immediately.
     {
