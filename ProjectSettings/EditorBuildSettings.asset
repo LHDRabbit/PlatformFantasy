@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Shohei/Main Menu.unity
+    guid: 102ccbd550b3d514cb9999dc2ef59578
+  - enabled: 1
     path: Assets/Scenes/Shohei/1-1.unity
     guid: d81cc2ab87596614681d945332c497f0
   - enabled: 1
