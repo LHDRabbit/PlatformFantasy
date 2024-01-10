@@ -852,7 +852,7 @@ GameObject:
   - component: {fileID: 126357674}
   m_Layer: 0
   m_Name: tree (9)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1266,7 +1266,7 @@ GameObject:
   - component: {fileID: 194048122}
   m_Layer: 0
   m_Name: tree (3)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2857,7 +2857,7 @@ GameObject:
   - component: {fileID: 358178518}
   m_Layer: 0
   m_Name: tree (4)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4628,6 +4628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e30e1efdbbbb1f4d8fc93fc2fa51749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lostAndRespawn: {fileID: 0}
+  startPosition: {x: 0, y: 0}
 --- !u!1 &540793697
 GameObject:
   m_ObjectHideFlags: 0
@@ -5202,7 +5204,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07036972, y: 0.123144865}
+  m_Offset: {x: -0.07036972, y: 0.25395727}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5213,7 +5215,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.696007, y: 1.598132}
+  m_Size: {x: 11.696007, y: 1.859757}
   m_EdgeRadius: 0
 --- !u!212 &582825173
 SpriteRenderer:
@@ -7726,7 +7728,7 @@ Transform:
   m_GameObject: {fileID: 930846263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.208, z: 0}
+  m_LocalPosition: {x: 0, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7764,7 +7766,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015645094, y: 0.0017382102}
+  m_Offset: {x: -0.016312242, y: -0.11874786}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7775,7 +7777,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21784897, y: 0.057943568}
+  m_Size: {x: 0.13968018, y: 0.29891574}
   m_EdgeRadius: 0
 --- !u!1001 &931760487
 PrefabInstance:
@@ -11300,7 +11302,7 @@ GameObject:
   - component: {fileID: 1374669405}
   m_Layer: 0
   m_Name: tree (5)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14271,6 +14273,7 @@ GameObject:
   - component: {fileID: 1778348174}
   - component: {fileID: 1778348175}
   - component: {fileID: 1778348176}
+  - component: {fileID: 1778348177}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -14366,7 +14369,7 @@ Transform:
   m_GameObject: {fileID: 1778348167}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16, y: -2.6, z: 0}
+  m_LocalPosition: {x: -16, y: -2.454, z: 0}
   m_LocalScale: {x: 2.0607, y: 2.0607, z: 2.0607}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14454,8 +14457,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014724867, y: -0.04029936}
-  m_Size: {x: 0.22858705, y: 0.3076366}
+  m_Offset: {x: -0.014724867, y: -0.029886317}
+  m_Size: {x: 0.22858705, y: 0.2868105}
   m_Direction: 0
 --- !u!114 &1778348176
 MonoBehaviour:
@@ -14471,6 +14474,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 234436879}
   lostSprite: {fileID: 21300000, guid: a85f3724632254a6cb24066dc54cbf60, type: 3}
+--- !u!114 &1778348177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778348167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95980a71fff341ac1c71617bebfa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {x: 0, y: 0}
+  spriteRenderer: {fileID: 1778348171}
+  wasLost: 0
 --- !u!1 &1784315468
 GameObject:
   m_ObjectHideFlags: 0
@@ -15824,9 +15842,9 @@ GameObject:
   - component: {fileID: 2031914631}
   - component: {fileID: 2031914632}
   - component: {fileID: 2031914633}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: tree
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15981,9 +15999,9 @@ GameObject:
   - component: {fileID: 2067814398}
   - component: {fileID: 2067814399}
   - component: {fileID: 2067814400}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: tree (1)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

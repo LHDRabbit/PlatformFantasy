@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 4942657034490981713}
   - component: {fileID: 2805457198579295602}
   - component: {fileID: 3733256375633973993}
+  - component: {fileID: -1784384480476433969}
   m_Layer: 0
   m_Name: Frog-idle-1
   m_TagString: Enemy
@@ -221,3 +222,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1784384480476433969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6233218963180162688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b8eb0f28b54b64881f837c0a66490c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
