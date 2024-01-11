@@ -22,7 +22,6 @@ public class LostAndRespawn : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Enemy"))
         {
-            wasLost = true;
             Lost();
             //SceneController.instance.ResetLevel();
         }

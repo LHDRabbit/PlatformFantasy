@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PineFlagPole : MonoBehaviour
 {
+    //public SceneController sceneController;
+    [SerializeField] Animator transitionAnim;
+
     public Transform pineFlag;
     public Transform poleBottom;
     public Transform house;
@@ -31,9 +34,10 @@ public class PineFlagPole : MonoBehaviour
 
         player.gameObject.SetActive(false);
 
-        yield return new WaitForSeconds(2.5f);
-
+        yield return new WaitForSeconds(1.5f);
+        //transitionAnim.SetTrigger("End");
         GameManager.Instance.LoadLevel(world, stage);
+        //transitionAnim.SetTrigger("Start");
     }
 
     private IEnumerator MoveTo(Transform subject, Vector3 destination)

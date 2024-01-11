@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FinishPoint : MonoBehaviour
 {
-    //public SceneController sceneController;
+    public SceneController sceneController;
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
