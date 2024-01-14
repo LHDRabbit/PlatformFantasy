@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shohei/2-1.unity
     guid: faa11e8355e818d489c17178355e6b03
+  - enabled: 1
+    path: Assets/Scenes/Shohei/2-2.unity
+    guid: ba96eb34f2354c5479355d9859775229
+  - enabled: 1
+    path: Assets/Scenes/Shohei/Main Menu End.unity
+    guid: c06d8e96b9ef86848a7a6afafbcacaf7
   m_configObjects: {}

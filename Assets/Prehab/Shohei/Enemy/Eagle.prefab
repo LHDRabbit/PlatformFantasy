@@ -44,13 +44,14 @@ GameObject:
   - component: {fileID: 5489672013772309884}
   - component: {fileID: 134347769163231990}
   - component: {fileID: 2634896721569112016}
+  - component: {fileID: -5104203218453982485}
   m_Layer: 7
   m_Name: Eagle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1001394190055015254
 Transform:
   m_ObjectHideFlags: 0
@@ -127,7 +128,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5839058556615611073}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -195,3 +196,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 2.2
   withinTheRange: 3.5
+--- !u!114 &-5104203218453982485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5839058556615611073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b8eb0f28b54b64881f837c0a66490c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

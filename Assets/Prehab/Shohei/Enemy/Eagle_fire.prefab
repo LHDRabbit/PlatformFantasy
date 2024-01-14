@@ -44,13 +44,14 @@ GameObject:
   - component: {fileID: 2300637131197990873}
   - component: {fileID: 294443598115701514}
   - component: {fileID: 830679390139497383}
+  - component: {fileID: -5285937323457617193}
   m_Layer: 0
   m_Name: Eagle_fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5154873457760158824
 Transform:
   m_ObjectHideFlags: 0
@@ -199,3 +200,15 @@ MonoBehaviour:
   releaseRate: 1
   ball: {fileID: 369017946382098497, guid: 3d4a478e11f3db440a9c3358a03fee04, type: 3}
   releasePoint: {fileID: 2825175344009336510}
+--- !u!114 &-5285937323457617193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4885521314970776916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b8eb0f28b54b64881f837c0a66490c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

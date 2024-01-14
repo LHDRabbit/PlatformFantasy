@@ -5,6 +5,8 @@ using UnityEngine;
 public class CameraFollow_2 : MonoBehaviour
 {   // - coding version 2
     private Transform player;
+    public LostAndRespawn lostAndRespawn;
+    public Vector2 startPosition;
 
     private void Awake()
     {
@@ -12,9 +14,9 @@ public class CameraFollow_2 : MonoBehaviour
     }
 
     private void LateUpdate()
-    {   
-        Vector3 cameraPosition = transform.position;
-        cameraPosition.x = Mathf.Max(cameraPosition.x, player.position.x); // Camera does not follow through the past screen
-        transform.position = cameraPosition;
+    {
+            Vector3 cameraPosition = transform.position;
+            cameraPosition.x = Mathf.Max(cameraPosition.x, player.position.x); // Camera does not follow through the past screen
+            transform.position = cameraPosition;
     }
 }

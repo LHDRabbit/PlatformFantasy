@@ -38,4 +38,21 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(sceneName);
     }
+
+    // Reset Scene - start
+
+    public void ResetLevel()
+    {
+        StartCoroutine(ReLoadLevel());
+    }
+
+    IEnumerator ReLoadLevel()
+    {
+        transitionAnim.SetTrigger("End");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 0);
+        transitionAnim.SetTrigger("Start");
+    }
+
+    // Reset Scene - end
 }
