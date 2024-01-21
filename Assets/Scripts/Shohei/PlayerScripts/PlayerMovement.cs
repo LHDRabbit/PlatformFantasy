@@ -148,23 +148,21 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // (X) A method that counts collected Coin and Cherry in CollectibleManager.
-    private void OnCollisionEnter2D(Collision2D other) // (X)-a 
+    private void OnTriggerEnter2D(Collider2D other) // (X)-a 
     {
-        if (other.gameObject.CompareTag("Gem")) // (X)-1 
+        if (other.CompareTag("Gem")) // (X)-1 
         {
             Destroy(other.gameObject);
             gemCount++;
             Debug.Log("{CollectobleManager.gemCount}");
         }
 
-        if (other.gameObject.CompareTag("Cherry")) // (X)-2 
+        if (other.CompareTag("Cherry")) // (X)-2 
         {
             Destroy(other.gameObject);
             cherryCount++;
             Debug.Log("{CollectobleManager.cherryCount}");
-        }
-
-        
+        }        
     }
 
     private void FixedUpdate() // player cannot move back to the past screen.

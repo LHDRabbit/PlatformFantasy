@@ -24,8 +24,7 @@ public class LostAndRespawn : MonoBehaviour
         {
             Lost();
             //SceneController.instance.ResetLevel();
-        }
-        
+        }        
     }
 
     public void Lost()
@@ -40,6 +39,5 @@ public class LostAndRespawn : MonoBehaviour
         yield return new WaitForSeconds(duration);
         transform.position = startPosition;
         spriteRenderer.enabled = true;
-        wasLost = false;
     }
 }
