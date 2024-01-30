@@ -109,9 +109,9 @@ GameObject:
   m_Component:
   - component: {fileID: 149598654985031829}
   - component: {fileID: 1601361676666949785}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: crate
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,9 +255,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5761089001213824313}
   - component: {fileID: 2723076642862481713}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spikes
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,9 +340,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1407214368664307826}
   - component: {fileID: 1476084974400308399}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spikes-top
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

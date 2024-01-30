@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 6849985119203406416}
   - component: {fileID: 5046569824000471120}
   - component: {fileID: 164042382314549127}
-  - component: {fileID: 8886913342498440659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tileset-sliced_13 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,47 +112,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &8886913342498440659
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369908128460301995}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1577150426176829272
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +124,7 @@ GameObject:
   - component: {fileID: 5397878693558221536}
   - component: {fileID: 7480499615830886811}
   - component: {fileID: 7642699855080545374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tileset-sliced_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +278,7 @@ GameObject:
   - component: {fileID: 8729120426826899899}
   - component: {fileID: 4313349510337755419}
   - component: {fileID: 1347397131683431193}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tileset-sliced_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +432,7 @@ GameObject:
   - component: {fileID: 8149059098891232996}
   - component: {fileID: 8033342140079004454}
   - component: {fileID: 7023688770858490356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tileset-sliced_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,8 +585,7 @@ GameObject:
   - component: {fileID: 8579953411728264754}
   - component: {fileID: 7479004325393467178}
   - component: {fileID: 2284659070706837451}
-  - component: {fileID: 5131736860313666023}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tileset-sliced_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,47 +686,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &5131736860313666023
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6655347254926292129}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &7250857833100567254
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,8 +697,7 @@ GameObject:
   - component: {fileID: 4229306562698271565}
   - component: {fileID: 6257966664936512601}
   - component: {fileID: 4133926789987831126}
-  - component: {fileID: 4964709195274983524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tileset-sliced_14 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -883,47 +798,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &4964709195274983524
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7250857833100567254}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &7501953169621796565
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2596666879198091881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DownHill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7501953169621796565}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.91, y: -3.02, z: 0.10747786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
